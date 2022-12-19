@@ -1,42 +1,32 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
-import Layout from './Layout';
+import { Link } from 'react-router-dom';
+
 
 const Home = () => {
- 
+  
+
+  
   return (
-    <>
-    <Layout/>
-    <div>
-      <h2>React Express</h2>
-      <h5>What is React?-</h5>
-      <h6>
-      
+    <div style={{background:"pink", minHeight:'85vh'}}>
+     <h1 className='text-center my-4'>Outstanding Stuff </h1>
+     <div className='products'>
+     
+     <div class="card text-center ">
+  <div class="card-header my-3">
+    Sale Sale ! So HURRY uP 
+  </div>
+  <div class="card-body my-5">
+    <h5 class="card-title">All Stuff is Availble</h5>
+    <p class="card-text">So if You interested Click Button Below</p>
+    <Link to='/product' class="btn btn-primary my-2">Click to buy</Link>
+  </div >
+ 
+</div>
+         
 
-React is a library for building user interfaces for the web and other platforms. 
-This guide covers the fundamental aspects of React needed to build great web apps.
- If you're more interested in building mobile apps, consider checking out React Native Express instead.
+     </div>
 
-How to use this guide
-You should use this guide as a companion to the official Facebook 
-documentation for getting started. While the official docs
- are great, this guide focuses on smaller, interactive examples 
- to illustrate React concepts. Additionally, this guide covers 
- important tools and projects in the React ecosystem which are
-  outside the scope of the React docs.
-
-This guide is intended for people who already know JavaScript.
- If you're new to JavaScript, or could use a refresher, consider
-  first going through JavaScript Express. We'll assume a little
-   knowledge of HTML and CSS, but even if you're not familiar
-    with those, you should still be able to follow this guide.
-      </h6>
     </div>
-   
-
-
-    </>
-    
   )
 }
 
